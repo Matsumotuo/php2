@@ -10,3 +10,13 @@ try {
     die('Conexão falhou: ' . $e->getMessage());
 }
 ?>
+CREATE TABLE Fornecedor (
+    idFornecedor INT PRIMARY KEY AUTO_INCREMENT,
+    razaoSocial VARCHAR(255) NOT NULL,
+    nomeFantasia VARCHAR(255) NOT NULL,
+    cnpj VARCHAR(18) NOT NULL,
+    responsavel VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    ddd VARCHAR(3) NOT NULL,
+    telefone VARCHAR(10) NOT NULL
+);
